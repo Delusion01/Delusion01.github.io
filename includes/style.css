@@ -1,0 +1,188 @@
+html {
+    scroll-behavior: smooth;
+}
+body, ul, li, h1, h2, h3, a, p {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+}
+body{
+    background-color: antiquewhite;
+    overflow-x:hidden;
+}
+header {
+    position: fixed;
+    background-color: #f4b41a ;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+header h1 {
+    color: #143d59;
+    border: 8px solid #143d59;
+    padding: 8px ;
+    display: inline-block;
+    border-radius: 40px;
+}
+.banner {
+    position: relative;
+    top: 50px;
+}
+.banner .welcome {
+    padding: 20px;
+    font-size: 3em;
+    color: white;
+    background: #f4b41a;    
+    position: absolute;
+    left: 0px;
+    top: 30%;
+
+}
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.banner .welcome span {
+    color: #8B0000;
+}
+nav {
+    background-color: #8B0000;
+    position: sticky;  
+    top: 90px;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+nav ul li {
+    list-style-type: none;
+    width: 100%;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+.article {
+    max-width: 100%;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+.article h2 {
+    font-size: 48px;
+    color: #143d59;
+    font-weight: bold;
+}
+.article p {
+    margin-top: 30px;
+    line-height: 2em;
+    color: #4B4B4B;
+    font-size: 18px;
+}
+.article p::first-line {
+    font-weight: bold;
+}
+.images {
+    text-align: center;
+}
+.images li {
+    width: 40%;
+    margin: 20px;
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+.images li img {
+    max-width: 100%;
+}
+.images li:hover {
+    top: -4px;
+}
+.contact {
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+    background: #8B0000;
+}
+.contact h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border-style: none;
+    text-align: center;
+    border: 5px solid #8B0000;
+}
+form input:focus {
+    border: 5px dashed #f4b41a;
+    
+    outline: none;
+}
+form input:valid {
+    border: 5px solid #143d59;
+}
+footer {
+    text-align: center;
+    background-color: #f4b41a;
+}
+footer p {
+    padding: 30px;
+    color: #143d59;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1400px){
+    .banner .welcome {
+        font-size: 2em;
+    }  
+}
+@media screen and (max-width: 960px){
+    .banner .welcome {
+        font-size: 1.3em;
+    }
+    nav li a {
+        font-size: 18px;
+    }
+    nav ul{
+        padding: 15px;
+    }
+    .images li{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner .welcome {
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    .banner .welcome br {
+        display: none;
+    }
+    .tsawer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 560px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .article h2 {
+        font-size: 40px;
+    }
+}
